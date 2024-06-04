@@ -1,0 +1,15 @@
+.pagination{
+    width: 10%;
+    display: flex;
+    margin: 20px auto;
+   li{
+    margin: 0 10px;
+    button{
+        font-size: 1.2em;
+    background-color: white;
+    }
+    .active{
+        color: red;
+    }
+   }
+}

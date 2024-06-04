@@ -1,0 +1,16 @@
+.TMap3-box {
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+  #map_wrap3 {
+    width: 450px;
+    margin-left: 0;
+    height: 450px;
+  }
+  .TMap3-text {
+    height: 50%;
+    & p {
+      height: 40px;
+    }
+  }
+}

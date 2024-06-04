@@ -1,0 +1,66 @@
+.menubox {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.header-link {
+  margin: 50px 40px;
+  position: relative;
+  display: inline-block;
+  color: black;
+
+  &:hover {
+    color: red; // hover 시 텍스트 색상 변경
+  }
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; // 밑줄 위치 조정
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: red; // 밑줄 색상
+    animation: spreadOut 0.5s forwards; // 애니메이션 적용
+  }
+
+  &.selected {
+    color: red; // 선택된 메뉴 항목의 텍스트 색상
+  }
+}
+
+@keyframes spreadOut {
+  from {
+    left: 50%;
+    width: 0;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.header-text {
+  font-family: 'NPSfontBold';
+  font-weight: bold;
+  font-size: 1.5625rem;
+}

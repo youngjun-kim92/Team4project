@@ -1,0 +1,346 @@
+.box {
+  height: 100%;
+  position: relative;
+
+  & img {
+    width: 40%;
+    height: 60vh;
+  }
+  & h1 {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    font-size: 4em;
+  }
+}
+
+// 탭 메뉴
+nav {
+  font-family: 'NPSfontBold';
+  width: 100%;
+  height: 5vh;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid darkgray;
+  margin-top: 60px;
+
+  .tab {
+    display: block;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  & a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  .active {
+    color: red;
+  }
+}
+
+//법적 보호
+.legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .text {
+    font-family: 'NPSfontBold';
+    width: 70%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .text2 {
+    list-style-type: square;
+    font-family: 'NPSfontBold';
+    font-size: 20px;
+  }
+
+  .text3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+
+    & p {
+      margin-bottom: 10px;
+    }
+  }
+  .image {
+    width: 80%;
+  }
+  & h2 {
+    margin-bottom: 0;
+    font-size: 2em;
+  }
+
+  & ul {
+    width: 100%;
+    text-align: left;
+  }
+
+  & p {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+//교통비 지원
+.transport {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+
+  & h2 {
+    font-family: 'NPSfontBold';
+    font-size: 2em;
+    margin-bottom: 60px;
+  }
+  & div {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+
+    & p {
+      margin-bottom: 3%;
+      display: flex;
+      & img {
+        margin-right: 5%;
+        width: 100%;
+        height: 200px;
+      }
+      //gpassCard
+      & p {
+        display: block;
+        width: 100%;
+        color: black;
+        font-size: 1.2em;
+        margin: 10px 0;
+        & a {
+          color: blue;
+          font-size: 1.2em;
+          font-weight: bold;
+          font-family: 'NPSfontBold';
+        }
+        & h4 {
+          font-family: 'Noto Sans KR', sans-serif;
+          width: 100%;
+          font-size: 1em;
+          margin-bottom: 2%;
+        }
+        & span {
+          font-family: 'Noto Sans KR', sans-serif;
+          display: block;
+          font-size: 1em;
+        }
+      }
+      .kpassCard {
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 58%;
+      }
+    }
+  }
+}
+
+// 접근성 기능
+.acess {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+  & h2 {
+    font-family: 'NPSfontBold';
+    font-size: 2em;
+    margin-bottom: 60px;
+  }
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    & a {
+      font-family: 'NPSfontBold';
+      font-size: 1.3em;
+      color: blue;
+    }
+
+    &:link,
+    &:visited {
+      color: blue;
+    }
+  }
+}
+
+//gbus
+.gbus {
+  display: flex;
+  /* 세로 중앙 정렬 */
+  margin-right: 141px;
+
+  & img {
+    margin: 0 90px;
+    width: 500px;
+    max-width: 400px;
+    margin-left: 197px;
+  }
+
+  .gbusText {
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 78px;
+    line-height: 2;
+    padding-left: 0;
+
+    & a {
+      font-weight: bold;
+      width: 300px;
+    }
+    & div {
+      & h4 {
+        font-size: 1.2em;
+      }
+
+      & span {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.moving {
+  display: flex;
+  align-items: center;
+
+  & img {
+    width: 500px;
+    max-width: 400px; /* 원하는 최대 너비로 조절 */
+    height: auto;
+    margin-bottom: 20px; /* 사진 아래 여백 */
+  }
+  & p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    margin-bottom: 20px;
+    & img {
+      width: 400px;
+      max-width: 400px; /* 원하는 최대 너비로 조절 */
+      height: auto;
+      margin-bottom: 20px; /* 사진 아래 여백 */
+    }
+    // movingText, centerText
+  }
+
+  .movingText {
+    & div {
+      width: 700px;
+      margin-left: 50px;
+      & a {
+        text-align: center;
+        margin-left: 30px;
+        font-size: 1.3em;
+        margin-left: 70px;
+      }
+    }
+  }
+
+  & p {
+    flex-grow: 2;
+    text-align: left;
+    flex-direction: column;
+    line-height: 2;
+    & h4 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+
+  & h4 {
+    font-size: 1.2em;
+  }
+  & span {
+    display: block;
+
+    text-align: left;
+  }
+}
+
+.center {
+  display: flex;
+  margin-left: 100px;
+  & p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  & img {
+    width: 400px;
+    max-width: 400px; /* 원하는 최대 너비로 조절 */
+    height: auto;
+    margin-bottom: 20px; /* 사진 아래 여백 */
+  }
+
+  .centerText {
+    display: block;
+    margin-left: 50px;
+    text-align: center;
+
+    & p {
+      flex-grow: 2;
+      text-align: left;
+      flex-direction: column;
+      line-height: 2;
+      & h4 {
+        font-size: 1.2em;
+        text-align: center;
+      }
+    }
+
+    .textCenter {
+      display: block;
+      margin: 0;
+      font-size: 1.3em;
+      line-height: 2;
+      font-family: 'NPSfontBold';
+      text-align: center;
+    }
+    & h4 {
+      font-size: 1.2em;
+    }
+    & div {
+      & p {
+        margin: 3px 0;
+      }
+      .tmapText {
+        & p {
+          width: 800px;
+          padding-top: 10px;
+        }
+        & a {
+          font-family: 'Noto Sans KR';
+          font-size: medium;
+        }
+      }
+    }
+  }
+}

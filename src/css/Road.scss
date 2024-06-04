@@ -1,0 +1,159 @@
+.route {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.75rem;
+}
+
+.route-title {
+  margin-bottom: 1.25rem;
+  text-align: center;
+  line-height: 2.5rem;
+
+  & p {
+    font-family: 'Noto Sans KR';
+  }
+}
+.route-title h2 {
+  font-family: 'NPSfontBold';
+  font-size: 2.25rem;
+}
+
+.route-map {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.map_wrap2,
+.map_wrap3 {
+  align-self: center;
+}
+
+.map-button {
+  font-weight: bold;
+  font-size: 2.5625rem;
+  margin-top: 20px;
+  letter-spacing: 5px;
+  position: absolute;
+  bottom: 70px;
+  right: 115px;
+  background: transparent;
+
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+.route-point {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 50%;
+  border-right: 1px solid #aaa;
+  box-sizing: border-box;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.route-point-start,
+.route-point-end {
+  display: flex;
+
+  & span {
+    font-family: 'Noto Sans KR';
+    font-size: 1.25rem;
+  }
+
+  & span:first-child {
+    font-weight: 700;
+  }
+
+  & span:last-child {
+    margin-left: 10px;
+    color: #555;
+  }
+}
+
+.route-point-start {
+  margin-bottom: 0.625rem;
+}
+
+.route-find {
+  overflow-y: auto;
+  margin-top: 1.875rem;
+
+  & ul li {
+    border-bottom: 1px dotted #555;
+    padding: 10px 0 10px 0;
+    font-family: 'Noto Sans KR';
+    color: #555;
+  }
+  & ul li:last-child {
+    border-bottom: none;
+  }
+}
+
+.route-find-title {
+  margin-top: 1.25rem;
+  font-family: 'Noto Sans KR';
+  font-size: 1.5625rem;
+
+  & h3 {
+    font-weight: 700;
+  }
+}
+
+.route-find-distance,
+.route-find-time {
+  display: flex;
+  align-items: center;
+
+  & span {
+    font-family: 'Noto Sans KR';
+    margin-right: 0.3125rem;
+    font-weight: 700;
+  }
+
+  & p {
+    color: #555;
+  }
+}
+
+.route-icon {
+  margin-right: 0.3125rem;
+}
+
+// 표시
+.route-point-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+.StationInfo {
+  margin-top: 30px;
+  width: 50%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    font-family: 'Noto Sans KR';
+    font-size: 1.5625rem;
+    margin-bottom: 1.875rem;
+    font-weight: 700;
+  }
+
+  & h2 {
+    font-family: 'Noto Sans KR';
+    font-size: 1.125rem;
+  }
+
+  & li {
+    margin-bottom: 0.625rem;
+  }
+}

@@ -1,0 +1,40 @@
+.writeBoard {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  h1 {
+    margin: 10px;
+    font-size: 2em;
+    font-family: 'NPSfontBold';
+  }
+  form {
+    height: 80vh;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    h4 {
+      text-align: left;
+      margin: 10px;
+      margin-top: 20px;
+      font-size: 1.3em;
+    }
+    input {
+      margin: 10px 0;
+      background: whitesmoke;
+      height: 3vh;
+      padding-left: 50px;
+    }
+    textarea {
+      margin: 10px 0;
+      padding: 50px;
+    }
+    button {
+      padding: 10px;
+      font-size: 1.3em;
+      font-family: 'Noto Sans KR';
+    }
+  }
+}

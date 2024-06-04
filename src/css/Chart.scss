@@ -1,0 +1,88 @@
+.ChartBox {
+  width: 60%;
+}
+
+.left_chart {
+  margin-right: 1%;
+  text-align: center;
+  font-family: 'NPSfontBold';
+  margin-top: 60px;
+  margin-bottom: 2%;
+
+  & h1 {
+    margin-bottom: 30px;
+    font-size: 1.7em;
+    font-weight: 600;
+  }
+  & p {
+    font-family: 'Noto Sans KR';
+  }
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'NPSfontBold';
+  width: 100%;
+  margin-bottom: 50px;
+
+  .chart-box {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .info-box {
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 33px;
+    //text-align: left; //주석,yhl
+    overflow: scroll;
+    overflow-x: hidden;
+
+    & h3 {
+      font-size: 1.3em;
+      font-weight: bold;
+      background-color: rgba(#6859d9, 0.3);
+      // opacity: 0.8;
+      padding: 6px;
+      margin-bottom: 15px;
+      font-family: 'Noto Sans KR';
+      margin-top: 30px;
+    }
+    & p {
+      font-size: larger;
+      font-weight: 500;
+      //margin: 10px 0; //주석,yhl
+    }
+    .chart-text {
+      margin-bottom: 20px;
+      width: 600px; // 줄안내려가게 변경,yhl
+      display: flex;
+      flex-wrap: wrap;
+      //border: 1px solid #ddd; //주석,yhl
+      //padding: 3px;
+      border-radius: 5px;
+      text-align: left;
+      margin-left: 40px;
+      font-family: 'Noto Sans KR';
+
+      & p {
+        width: 100%;
+        font-size: medium;
+        margin-bottom: 5px;
+        font-family: 'Noto Sans KR';
+      }
+      & p:nth-child(2) {
+        padding-left: 25px;
+      }
+    }
+    .text {
+      text-align: center;
+      padding-top: 125px;
+      font-family: 'Noto Sans KR';
+      font-size: 1.1em;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.station-name {
+  & li {
+    border-bottom: 1px dotted #555;
+    padding: 10px 0 10px 0;
+    color: #555;
+  }
+  & li:last-child {
+    border-bottom: none;
+  }
+}
+
+.station-form {
+  display: flex;
+  margin-bottom: 0.875rem;
+}
+
+.station-input {
+  width: 40%;
+  margin-right: 10px;
+  height: 1.5625rem;
+}
+
+.station-btn {
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.station-result {
+  margin-bottom: 1.875rem;
+  display: flex;
+
+  & p {
+    font-family: 'Noto Sans KR';
+    margin-left: 0.5rem;
+    color: #555;
+  }
+}
+
+.station-result-title {
+  font-family: 'Noto Sans KR';
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+  font-weight: 700;
+  margin-right: 0.4375rem;
+}
+
+.station-name p,
+.station-name li {
+  font-family: 'Noto Sans KR';
+}
+
+.station-name p {
+  color: #555;
+}
+
+.station-name-icon {
+  margin-right: 0.3125rem;
+}
